@@ -1,0 +1,95 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+ :root {
+  --turquoise: #CAE7E2;
+  --green: #C7D9A5;
+  --cream: #FEE4D3;
+  --coral: #EE9C86;
+  --milktea: #F2BD8E;
+  --denim: #304050;
+  --grey: #6B7280;
+  --white: #FFFFFD;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+}
+
+.hero{
+  background-color: var(--cream);
+}
+
+.blue-text{
+  color: var(--denim);
+}
+
+/* Base Button */
+.btn .bi {
+  margin-left: 5px;
+}
+
+.btn {
+  background-color: var(--denim);
+  border-radius: 4px;
+  color: var(--white);
+  width: 180px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+/* Button Types */
+.btn-fill {
+  background-color: var(--denim);
+  border: none;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1.5px solid var(--denim);
+  color: var(--denim);
+}
+
+/* Hover Effect */
+.btn-fill:hover {
+  background-color: transparent;
+  border: 1.5px solid var(--denim);
+}
+
+.btn-outline:hover {
+  background-color: var(--denim);
+  color: var(--white);
+}
+
+section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.navbar a {
+  color:var(--denim);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.navbar-nav {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link:hover {
+    color: var(--coral);
+}

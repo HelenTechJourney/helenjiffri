@@ -1,0 +1,256 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+ @import url('https://unpkg.com/bs-brain@2.0.4/tutorials/timelines/timeline-1/assets/css/timeline-1.css');
+
+ :root {
+  --turquoise: #CAE7E2;
+  --green: #C7D9A5;
+  --cream: #FEE4D3;
+  --coral: #EE9C86;
+  --milktea: #F2BD8E;
+  --denim: #304050;
+  --grey: #6B7280;
+  --white: #FFFFFD;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: none;
+}
+
+.hero{
+  background-color: var(--cream);
+}
+
+.footer{
+  background-color: var(--green);
+}
+
+.blue-text{
+  color: var(--denim);
+}
+
+.grey-text{
+  color: var(--grey);
+}
+
+.btn .bi {
+  margin-left: 5px;
+}
+
+.btn {
+  background-color: var(--denim);
+  border-radius: 4px;
+  color: var(--white);
+  width: 180px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+
+/* Button Types */
+.btn-fill {
+  background-color: var(--denim);
+  color: var(--white);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1.5px solid var(--denim);
+  color: var(--denim);
+}
+
+/* Hover Effect */
+.btn-fill:hover {
+  background-color: transparent;
+  border: 1.5px solid var(--denim);
+  color: var(--denim);
+}
+
+.btn-outline:hover {
+  background-color: var(--denim);
+  color: var(--white);
+}
+
+a, a:hover {
+  text-decoration: none !important;
+}
+
+.hero, .education, .skills, .portfolio {
+  padding-top: 60px;
+}
+
+.navbar a {
+  color:var(--denim);
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: var(--coral);
+}
+
+/* Timeline styling */
+.bsb-timeline-2{
+  --bsb-tl-color:var(--denim);
+  --bsb-tl-circle-size:32px;
+  --bsb-tl-circle-offset:16px
+}
+
+.py-8{
+  padding-bottom:4.5rem!important;
+  padding-top:4.5rem!important
+}
+
+@media(min-width:576px){
+  .py-sm-8{padding-bottom:4.5rem!important;
+    padding-top:4.5rem!important
+  }
+}
+
+@media(
+  min-width:768px){
+    .py-md-8{padding-bottom:4.5rem!important;
+      padding-top:4.5rem!important
+    }
+  }
+  
+@media(min-width:992px){
+    .py-lg-8{padding-bottom:4.5rem!important;
+      padding-top:4.5rem!important
+    }
+  }
+  
+@media(min-width:1200px){
+  .py-xl-8{padding-bottom:4.5rem!important;
+    padding-top:4.5rem!important
+  }
+}
+
+@media(min-width:1400px){
+  .py-xxl-8{
+    padding-bottom:4.5rem!important;
+    padding-top:4.5rem!important
+  }
+}
+
+.bsb-timeline-2 .timeline>.timeline-item .timeline-icon{
+  align-items:center;
+  background-color:var(--bsb-tl-circle-color);
+  border-radius:50%;
+  display:flex;
+  height:var(--bsb-tl-circle-size);
+  justify-content:center;
+  left:calc(var(--bsb-tl-circle-offset)*-1);
+  position:absolute;
+  top:0;
+  width:var(--bsb-tl-circle-size);
+  z-index:1
+}
+
+.bsb-timeline-2 .timeline{
+  list-style:none;
+  margin:0;
+  padding:0;
+  position:relative
+}
+  
+.bsb-timeline-2 .timeline:after{
+  background-color:var(--bsb-tl-color);
+  bottom:0;
+  content:"";
+  left:0;
+  position:absolute;
+  top:0;
+  width:2px
+}
+
+.bsb-timeline-2 .timeline>.timeline-item{
+  margin:0;
+  padding:0;
+  position:relative
+}
+
+.bsb-timeline-2 .timeline>.timeline-item .timeline-body{
+  margin:0;
+  padding:0;
+  position:relative
+}
+
+.bsb-timeline-2 .timeline>.timeline-item .timeline-content{
+  padding:0 0 2.5rem 2.5rem
+}
+
+#education .timeline-item .timeline-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+#education .timeline-item .timeline-content h6 img {
+  width: 24px;
+  height: 20px;
+  object-fit: contain;
+}
+
+@media(min-width:768px){
+  .bsb-timeline-2 .timeline>.timeline-item .timeline-content{
+    padding-bottom:3rem
+  }
+}
+
+.bsb-timeline-2 .timeline>.timeline-item:last-child .timeline-content{
+  padding-bottom:0
+}
+
+.card-turquoise {
+  --bsb-tl-circle-color: var(--turquoise);
+  background-color:var(--turquoise);
+  border-radius: 16px;
+  margin: 14px;
+}
+
+.card-milktea {
+  --bsb-tl-circle-color: var(--milktea);
+  background-color:var(--milktea);
+  border-radius: 16px;
+  margin: 14px;
+}
+
+#portfolio .card {
+  overflow: hidden;
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#portfolio .card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.card-body {
+  padding: 10px;
+}
